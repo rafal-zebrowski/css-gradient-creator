@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="branding">
+            <h2 class="branding">CSS Gradient Creator</h2>
+        </div>
+        <div class="container">
+            <div class="row m-auto pt-2">
+                <div class="col-sm-4 pt-2">
+                    <button id="linear-button" class="btn base-button" type="button">LINEAR</button>
+                </div>
+                <div class="col-sm-4 px-sm-0 pt-2">
+                    <button id="radial-button" class="btn base-button" type="button">RADIAL</button>
+                </div>
+            </div>
+            <div class="row m-auto pt-4 color">
+                <div class="col-4">
+                    <span>Kolor 1:</span>
+                </div>
+                <div class="offset-5 col-3">
+                    <input id="color1" type="color" value="#00FF04">
+                </div>
+            </div>
+            <div class="row m-auto pt-2 color-range-container">
+                <div class="col-9">
+                    <input id="slider-color1" class="color-range" type="range" step="1" min="0" max="100" value="0">
+                </div>
+                <div class="col-3">
+                    <input id="range-input1" type="number" min="0" max="100">
+                </div>
+            </div>
+            <div class="row m-auto pt-4 color">
+                <div class="col-4">
+                    <span>Kolor 2:</span>
+                </div>
+                <div class="offset-5 col-3">
+                    <input id="color2" type="color" value="#EEFF00">
+                </div>
+            </div>
+            <div class="row m-auto pt-2 color-range-container">
+                <div class="col-9">
+                    <input id="slider-color2" class="color-range" type="range" step="1" min="0" max="100" value="100">
+                </div>
+                <div class="col-3">
+                    <input id="range-input2" type="number" min="0" max="100">
+                </div>
+            </div>
+            <div class="row m-auto pt-4 degree">
+                <div class="col-12">
+                    <span>Kąt:</span>
+                </div>
+                <div class="col-9">
+                    <input id="degree-slider" type="range" min="0" max="360" value="90">
+                </div>
+                <div class="col-3">
+                    <input id="degree-number" type="number" min="0" max="360" value="90">
+                </div>
+            </div>
+            <div class="row m-auto pt-4">
+                <div class="col-sm-8">
+                    <button id="draw-button" class="btn base-button" type="button">LOSUJ KOLORY</button>
+                </div>
+            </div>
+            <div class="row m-auto pt-4">
+                <div class="col-12">
+                    <span>Kopiuj CSS:</span>
+                </div>
+                <div class="col-sm-4 pt-2">
+                    <button id="hexBtn" type="button" class="btn base-button">HEX</button>
+                </div>
+                <div class="col-sm-4 px-sm-0 pt-2">
+                    <button id="rgbBtn" type="button" class="btn base-button">RGBA</button>
+                </div>
+            </div>
+            <div class="author">
+                <span>autor: Rafał Żebrowski</span>
+            </div>
+        </div>
+    </aside>
+    <main class="main">
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </main>
+
+    <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/gradient.js"></script>
+</body>
+
+</html>
