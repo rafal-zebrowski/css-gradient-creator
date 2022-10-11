@@ -1,8 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS GRADIENT CREATOR</title>
+    <meta name="description" content="Narzędzie, dzięki któremu wygodnie wygenerujesz gotowe reguły CSS, dostowując gradient i kopiując gotowy kod.">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
 
@@ -28,15 +32,15 @@
                     <span>Kolor 1:</span>
                 </div>
                 <div class="offset-5 col-3">
-                    <input id="color1" type="color" value="#00FF04">
+                    <input id="color1" type="color" value="#00FF04" aria-label="kolor 1">
                 </div>
             </div>
             <div class="row m-auto pt-2 color-range-container">
                 <div class="col-9">
-                    <input id="slider-color1" class="color-range" type="range" step="1" min="0" max="100" value="0">
+                    <input id="slider-color1" class="color-range" type="range" step="1" min="0" max="100" value="0" aria-label="slider1">
                 </div>
                 <div class="col-3">
-                    <input id="range-input1" type="number" min="0" max="100">
+                    <input id="range-input1" type="number" min="0" max="100" aria-label="range1">
                 </div>
             </div>
             <div class="row m-auto pt-4 color">
@@ -44,15 +48,15 @@
                     <span>Kolor 2:</span>
                 </div>
                 <div class="offset-5 col-3">
-                    <input id="color2" type="color" value="#EEFF00">
+                    <input id="color2" type="color" value="#EEFF00" aria-label="color2">
                 </div>
             </div>
             <div class="row m-auto pt-2 color-range-container">
                 <div class="col-9">
-                    <input id="slider-color2" class="color-range" type="range" step="1" min="0" max="100" value="100">
+                    <input id="slider-color2" class="color-range" type="range" step="1" min="0" max="100" value="100" aria-label="slider2">
                 </div>
                 <div class="col-3">
-                    <input id="range-input2" type="number" min="0" max="100">
+                    <input id="range-input2" type="number" min="0" max="100" aria-label="range2">
                 </div>
             </div>
             <div class="row m-auto pt-4 degree">
@@ -60,10 +64,10 @@
                     <span>Kąt:</span>
                 </div>
                 <div class="col-9">
-                    <input id="degree-slider" type="range" min="0" max="360" value="90">
+                    <input id="degree-slider" type="range" min="0" max="360" value="90" aria-label="slider3">
                 </div>
                 <div class="col-3">
-                    <input id="degree-number" type="number" min="0" max="360" value="90">
+                    <input id="degree-number" type="number" min="0" max="360" value="90" aria-label="degree">
                 </div>
             </div>
             <div class="row m-auto pt-4">
